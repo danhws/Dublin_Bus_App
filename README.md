@@ -50,7 +50,10 @@ The news feature can provide news about Dublin Bus using google search and Twitt
 ![News about Dublin Bus](frontend/src/data/News.png)
 
 
-## Technologies
+### Built With
+* [![React][React.js]][Vue-url]
+* [![Django][Django.com]][Django-url]
+* [![Tailwind][https://tailwindcss.com/]][Bootstrap-url]
 
 - React
 - Django
@@ -59,4 +62,9 @@ The news feature can provide news about Dublin Bus using google search and Twitt
 - Jupyter Notebooks
 - AWS EC2
 
+### Contributors
+- <b>Marcus West</b> - Coordination Lead, Database
+- <b>Daniel Howes</b> - Data Analytics
+- <b>Zhilin Yang</b> - Frontend
+- <b>Mengxin Zhong</b> - Backend
 
