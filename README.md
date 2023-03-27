@@ -49,11 +49,12 @@ The news feature can provide news about Dublin Bus using google search and Twitt
 
 ![News about Dublin Bus](frontend/src/data/News.png)
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ### Built With
 * [![React][React.js]][Vue-url]
 * [![Django][Django.com]][Django-url]
 * [![Tailwind][https://tailwindcss.com/]][Bootstrap-url]
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 - React
 - Django
