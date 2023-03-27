@@ -1,9 +1,9 @@
 # Dublin Bus React-Django App
 
 
-With Dubin Bus being the biggest provider of transportation around Ireland, bus time prediction is central to the perceived quality of service by its users. Therefore, this project report is focused on both using historical data to create models to improve predictability and secondly outlining how this project has succeeded in allowing the results for the model to be displayed in an accessible and understandable way through the use of a web application. Central to this, this project report also discusses the approach to collaboration, details on system architecture before discussing the testing and results of the project
+This project involves analysing historic Dublin Bus data and weather data in order to create dynamic travel time estimates. Based on data analysis of historic Dublin Bus data, a system which when presented with any bus route, departure time, the day of the week, current weather condition, produces an accurate estimate of travel time for the complete route and sections of the route.
 
-Visit our Dublin Bus app [here](http://ec2-34-245-45-115.eu-west-1.compute.amazonaws.com:3000/).
+Users should be able to interact with the system via a web-based interface which is optimised for mobile devices. When presented with any bus route, an origin stop and a destination stop, a time, a day of the week, current weather, the system should produce and display via the interface an accurate estimate of travel time for the selected journey.
 
 ## Features
 
@@ -50,12 +50,11 @@ The news feature can provide news about Dublin Bus using google search and Twitt
 ![News about Dublin Bus](frontend/src/data/News.png)
 
 ### Built With
-- [React]()
-- [Django]
-- [PostgreSQL]
+- [React](https://react.dev/)
+- [Django](https://www.djangoproject.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Tailwind_CSS](https://tailwindcss.com/)
-- [Jupyter_Notebooks]
-- [AWS_EC2]
+- [Jupyter_Notebooks](https://jupyter.org/)
 
 ### Contributors
 - <b>Marcus West</b> - Coordination Lead, Database
