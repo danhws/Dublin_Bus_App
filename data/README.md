@@ -24,14 +24,14 @@ Each dataset was investigated and preprocessed individually before being joined 
 - MonthOfService: Month of service
 - TimePassedSince_Dep: Our target feature. How long has passed since the bus started its trip.
 
-For more information the data quality report can be found [here](data/Data_Quality_Report.pdf).
+For more information the data quality report can be found [here](Data_Quality_Report.pdf).
 
 ## Modelling
 
 Three different models were used to estimate bus arrival time: Linear Regression, Decision Tree and Random Forest. Data was randomly separated into 70% training and 30% and 10 fold cross validation was performed where the MAE, RMSE and R2 scores were measured. Initially, only predictions for the full journey duration were made, which involved using only the RT_Trips dataset. The Random Forest performed the best with an R2 score of 0.621. This was unsatisfactory and so Stop-to-stop predictions using each model were then made using the full, joined dataset, which meant using sub samples of the data based on route name and direction. The results mirrored those of full journey predictions in that Random Forest performed the best, however the error metrics improved drastically. 
 
 The mean results from 10 fold cross-validation were used to measure the model’s accuracy. Based on a subset of the data whose ‘LINEID’ is 46A and ‘DIRECTION’ is 1, the performance of the three models are summarised below:
-
+-----|------------|--------------|--------------|
      | LinearReg  |Decision Tree | Random Forest|
 -----|------------|--------------|--------------|
 MAE  |  399.0     | 398.0        |  176.3       |              
