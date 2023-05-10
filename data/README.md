@@ -31,15 +31,12 @@ For more information the data quality report can be found [here](Data_Quality_Re
 Three different models were used to estimate bus arrival time: Linear Regression, Decision Tree and Random Forest. Data was randomly separated into 70% training and 30% and 10 fold cross validation was performed where the MAE, RMSE and R2 scores were measured. Initially, only predictions for the full journey duration were made, which involved using only the RT_Trips dataset. The Random Forest performed the best with an R2 score of 0.621. This was unsatisfactory and so Stop-to-stop predictions using each model were then made using the full, joined dataset, which meant using sub samples of the data based on route name and direction. The results mirrored those of full journey predictions in that Random Forest performed the best, however the error metrics improved drastically. 
 
 The mean results from 10 fold cross-validation were used to measure the model’s accuracy. Based on a subset of the data whose ‘LINEID’ is 46A and ‘DIRECTION’ is 1, the performance of the three models are summarised below:
------|------------|--------------|--------------|
-     | LinearReg  |Decision Tree | Random Forest|
------|------------|--------------|--------------|
-MAE  |  399.0     | 398.0        |  176.3       |              
------|------------|--------------|--------------|
-RMSE |  526.9     | 541.0        |  264.7       |              
------|------------|--------------|--------------|
-R2   |  0.861     | 0.854        |  0.965       |              
------|------------|--------------|--------------|
+
+     | LinearReg | Decision Tree | Random Forest |
+:--- | :---: | :---: | :---: |
+MAE | 399.0 | 398.0| 176.3 |              
+RMSE | 526.9 | 541.0 | 264.7 |              
+R2 | 0.861 | 0.854 | 0.965 |              
 
 The Random Forest was the most accurate out of each model tested across all datasets. For stop- to-stop modelling, PROGRNUMBER had the most importance (0.863) highlighting that where a stop is along a route makes a large difference in predicting arrival time. However, users may be more likely to know the stop number of their desired location rather than where that stop falls along a bus route, and so it could be considered impractical to ask the user to input a stop’s sequence number to make a prediction. To combat this, a JSON object was made containing a list of each stop number along every route, paired to its sequence number along that route. This made it easy for the user to input a stop number and look up the PROGRNUMBER for the model. The drawback to this is that bus routes change over time and stops would need to be updated regularly.
 
