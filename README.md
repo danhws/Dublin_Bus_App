@@ -5,6 +5,8 @@ This project involves analysing historic Dublin Bus data and weather data in ord
 
 Users should be able to interact with the system via a web-based interface which is optimised for mobile devices. When presented with any bus route, an origin stop and a destination stop, a time, a day of the week, current weather, the system should produce and display via the interface an accurate estimate of travel time for the selected journey.
 
+Information on the data used for this project can be found [here](data/README.md).
+
 ## Features
 
 ### Journey Planner
