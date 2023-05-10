@@ -32,11 +32,11 @@ Three different models were used to estimate bus arrival time: Linear Regression
 
 The mean results from 10 fold cross-validation were used to measure the model’s accuracy. Based on a subset of the data whose ‘LINEID’ is 46A and ‘DIRECTION’ is 1, the performance of the three models are summarised below:
 
-     | LinearReg | Decision Tree | Random Forest |
-:--- | :---: | :---: | :---: |
-MAE | 399.0 | 398.0| 176.3 |              
-RMSE | 526.9 | 541.0 | 264.7 |              
-R2 | 0.861 | 0.854 | 0.965 |              
+|     | LinearReg | Decision Tree | Random Forest |
+| --- | --- | --- | --- |
+| MAE | 399.0 | 398.0| 176.3 |              
+| RMSE | 526.9 | 541.0 | 264.7 |              
+| R2 | 0.861 | 0.854 | 0.965 |              
 
 The Random Forest was the most accurate out of each model tested across all datasets. For stop- to-stop modelling, PROGRNUMBER had the most importance (0.863) highlighting that where a stop is along a route makes a large difference in predicting arrival time. However, users may be more likely to know the stop number of their desired location rather than where that stop falls along a bus route, and so it could be considered impractical to ask the user to input a stop’s sequence number to make a prediction. To combat this, a JSON object was made containing a list of each stop number along every route, paired to its sequence number along that route. This made it easy for the user to input a stop number and look up the PROGRNUMBER for the model. The drawback to this is that bus routes change over time and stops would need to be updated regularly.
 
