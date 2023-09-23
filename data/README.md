@@ -28,7 +28,7 @@ Each dataset was investigated and preprocessed individually before being joined 
 - MonthOfService: Month of service
 - TimePassedSince_Dep: Our target feature. How long has passed since the bus started its trip.
 
-For more information on the cleaning process, the data quality report can be found [here](Data_Quality_Report.pdf).
+For more information on the cleaning process, the data quality report can be found [here](Data_Quality_Report.pdf) and the in the four notebooks in this repository.
 
 A visualisation tool of the cleaned data in the form of a [Tableau Dashboard](https://public.tableau.com/views/DublinBus_2018/DublinBusTripAnalysis2018?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link) can be found here.
 
