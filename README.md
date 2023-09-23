@@ -60,7 +60,7 @@ The news feature can provide news about Dublin Bus using google search and Twitt
 
 ### Contributors
 - <b>Marcus West</b> - Coordination Lead, Database
-- <b>Daniel Howes</b> - Data Analytics
+- <b>Daniel Howes</b> - Data Analytics, Machine Learning
 - <b>Zhilin Yang</b> - Frontend
 - <b>Mengxin Zhong</b> - Backend
 
