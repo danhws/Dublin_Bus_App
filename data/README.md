@@ -1,6 +1,6 @@
 # Dublin Bus Journey Planner Data Overview
 
-The goal of this project was to produce dynamic and accurate estimates of travel time between stops along a bus route complete route based on historical bus data.
+The goal of this project was to produce dynamic and accurate estimates of travel time between stops along a bus route based on historical bus data.
 
 Below is the developmental process which took place.
 
